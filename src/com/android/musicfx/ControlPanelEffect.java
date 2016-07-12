@@ -114,10 +114,10 @@ public class ControlPanelEffect {
     protected static final Map<Integer, EffectSet> mAudioSessions = new HashMap<Integer, EffectSet>();
 
     // Defaults
-    private final static boolean GLOBAL_ENABLED_DEFAULT = false;
-    private final static boolean VIRTUALIZER_ENABLED_DEFAULT = false;
-    private final static int VIRTUALIZER_STRENGTH_DEFAULT = 1000;
-    private final static boolean BASS_BOOST_ENABLED_DEFAULT = false;
+    final static boolean GLOBAL_ENABLED_DEFAULT = false;
+    private final static boolean VIRTUALIZER_ENABLED_DEFAULT = true;
+    private final static int VIRTUALIZER_STRENGTH_DEFAULT = 0;
+    private final static boolean BASS_BOOST_ENABLED_DEFAULT = true;
     private final static int BASS_BOOST_STRENGTH_DEFAULT = 667;
     private final static boolean PRESET_REVERB_ENABLED_DEFAULT = false;
     private final static int PRESET_REVERB_CURRENT_PRESET_DEFAULT = 0; // None
