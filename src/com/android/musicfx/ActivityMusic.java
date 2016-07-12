@@ -42,9 +42,11 @@ import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.graphics.drawable.ColorDrawable;
+import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.audiofx.AudioEffect;
 import android.media.audiofx.AudioEffect.Descriptor;
+import android.media.audiofx.Virtualizer;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.support.v4.widget.DrawerLayout;
@@ -206,12 +208,7 @@ public class ActivityMusic extends AppCompatActivity {
 
             if (effect.type.equals(AudioEffect.EFFECT_TYPE_VIRTUALIZER)) {
                 mVirtualizerSupported = true;
-                if (effect.uuid.equals(UUID.fromString("1d4033c0-8557-11df-9f2d-0002a5d5c51b"))
-                    || effect.uuid.equals(UUID.fromString("e6c98a16-22a3-11e2-b87b-f23c91aec05e"))
-                    || effect.uuid.equals(UUID.fromString("d3467faa-acc7-4d34-acaf-0002a5d5c51b"))) {
-                    mVirtualizerIsHeadphoneOnly = true;
-                    Log.d(TAG, effect.name.toString() + ", mVirtualizerIsHeadphoneOnly = " + mVirtualizerIsHeadphoneOnly);
-                }
+                mVirtualizerIsHeadphoneOnly = !isVirtualizerTransauralSupported();
             } else if (effect.type.equals(AudioEffect.EFFECT_TYPE_BASS_BOOST)) {
                 mBassBoostSupported = true;
             } else if (effect.type.equals(AudioEffect.EFFECT_TYPE_EQUALIZER)) {
@@ -856,5 +853,21 @@ public class ActivityMusic extends AppCompatActivity {
             }
         }
         return false;
+    }
+
+    private static boolean isVirtualizerTransauralSupported() {
+        Virtualizer virt = null;
+        boolean transauralSupported = false;
+        try {
+            virt = new Virtualizer(0, android.media.AudioSystem.newAudioSessionId());
+            transauralSupported = virt.canVirtualize(AudioFormat.CHANNEL_OUT_STEREO,
+                    Virtualizer.VIRTUALIZATION_MODE_TRANSAURAL);
+        } catch (Exception e) {
+        } finally {
+            if (virt != null) {
+                virt.release();
+            }
+        }
+        return transauralSupported;
     }
 }
