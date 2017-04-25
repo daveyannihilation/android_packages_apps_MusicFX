@@ -53,4 +53,14 @@
   <string name="picker_title">Zenei effektek kezelőpanelje</string>
   <string name="toggle_button_on">Be</string>
   <string name="toggle_button_off">Ki</string>
+  <string name="drawer_item_speaker">Hangszóró</string>
+  <string name="drawer_item_headset">Fejhallgató</string>
+  <string name="drawer_item_bluetooth">Bluetooth</string>
+  <string name="drawer_open">Navigációs fiók megnyitása</string>
+  <string name="drawer_close">Navigációs fiók bezárása</string>
+  <string name="stereowide_light">Könnyű</string>
+  <string name="stereowide_moderate">Mérsékelt</string>
+  <string name="stereowide_high">Magas</string>
+  <string name="stereowide_none">Nincs</string>
+  <string name="sw_title">Sztereó widener</string>
 </resources>
