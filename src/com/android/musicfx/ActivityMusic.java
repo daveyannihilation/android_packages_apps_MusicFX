@@ -164,6 +164,7 @@ public class ActivityMusic extends AppCompatActivity {
     private ViewGroup mViewGroup;
     private Gallery mGallery;
     private int mHighlightColor;
+    private int mTextColor;
 
     /**
      * Array containing RSid of preset reverb names.
@@ -240,7 +241,8 @@ public class ActivityMusic extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         mViewGroup = (ViewGroup) findViewById(R.id.contentSoundEffects);
-        mHighlightColor = getResources().getColor(R.color.highlight);
+        mHighlightColor = getResources().getColor(R.color.highlight_gallery_text);
+        mTextColor = getResources().getColor(R.color.textColor);
 
         // Fill array with presets from AudioEffects call.
         // allocate a space for 1 extra strings (User)
@@ -263,7 +265,8 @@ public class ActivityMusic extends AppCompatActivity {
         mSWStrengthNames = getResources().getStringArray(R.array.stereowide_modes);
 
         mCurrentLevelText = (TextView)findViewById(R.id.switchstatus);
-        mCurrentLevelText.setCompoundDrawableTintList(new ColorStateList(new int[][] { new int[0] }, new int[] { getResources().getColor(R.color.current_level_color) }));
+        mCurrentLevelText.setCompoundDrawableTintList(new ColorStateList(new int[][] { new int[0] },
+                new int[] { getResources().getColor(R.color.current_out_source_color) }));
 
         // Watch for button clicks and initialization.
         if (mVirtualizerSupported || mBassBoostSupported || mEqualizerSupported
@@ -550,7 +553,7 @@ public class ActivityMusic extends AppCompatActivity {
                 if (position == mPRPreset && position != 0 && mPRPresetSpinner.isEnabled()) {
                     ((TextView) item.findViewById(android.R.id.text1)).setTextColor(mHighlightColor);
                 } else {
-                    ((TextView) item.findViewById(android.R.id.text1)).setTextColor(Color.BLACK);
+                    ((TextView) item.findViewById(android.R.id.text1)).setTextColor(mTextColor);
                 }
                 return item;
             }
@@ -572,7 +575,7 @@ public class ActivityMusic extends AppCompatActivity {
                         if (position != 0 && mPRPresetSpinner.isEnabled()) {
                             tv.setTextColor(mHighlightColor);
                         } else {
-                            tv.setTextColor(Color.BLACK);
+                            tv.setTextColor(mTextColor);
                         }
                     }
                 }
@@ -584,6 +587,7 @@ public class ActivityMusic extends AppCompatActivity {
             }
         });
         mPRPresetSpinner.setSelection(mPRPreset);
+        mPRPresetSpinner.setBackgroundResource(R.drawable.rev_spinner);
     }
 
     private void stereoWideSpinnerInit() {
@@ -594,7 +598,7 @@ public class ActivityMusic extends AppCompatActivity {
                 if (position == mSWStrength && position != 0 && mSWStrengthSpinner.isEnabled()) {
                     ((TextView) item.findViewById(android.R.id.text1)).setTextColor(mHighlightColor);
                 } else {
-                    ((TextView) item.findViewById(android.R.id.text1)).setTextColor(Color.BLACK);
+                    ((TextView) item.findViewById(android.R.id.text1)).setTextColor(mTextColor);
                 }
                 return item;
             }
@@ -616,7 +620,7 @@ public class ActivityMusic extends AppCompatActivity {
                         if (position != 0 && mSWStrengthSpinner.isEnabled()) {
                             tv.setTextColor(mHighlightColor);
                         } else {
-                            tv.setTextColor(Color.BLACK);
+                            tv.setTextColor(mTextColor);
                         }
                     }
                 }
@@ -628,6 +632,7 @@ public class ActivityMusic extends AppCompatActivity {
             }
         });
         mSWStrengthSpinner.setSelection(mSWStrength);
+        mSWStrengthSpinner.setBackgroundResource(R.drawable.rev_spinner);
     }
 
     private void equalizerPresetsInit() {
