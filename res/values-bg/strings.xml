@@ -23,7 +23,7 @@
   <string name="headset_plug">Включете слушалки за тези ефекти.</string>
   <string name="bass_boost_strength">Усилване на ниските честоти</string>
   <string name="virtualizer_strength">Съраунд звук</string>
-  <string name="pr_title">Реверберация:</string>
+  <string name="pr_title">Реверберация</string>
   <string name="pr_summary">Допълнителни ефекти за реверберацията в стая</string>
   <string name="pr_dialog_title">Предварително задаване на реверберация</string>
   <string name="setup">Настройка</string>

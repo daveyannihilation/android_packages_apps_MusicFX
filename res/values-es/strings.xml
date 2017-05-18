@@ -24,7 +24,7 @@
   <string name="combo_device">Efectos sólo compatibles con reproducción de auriculares.</string>
   <string name="bass_boost_strength">Refuerzo de graves</string>
   <string name="virtualizer_strength">Sonido envolvente</string>
-  <string name="pr_title">Reverberación:</string>
+  <string name="pr_title">Reverberación</string>
   <string name="pr_summary">Otros efectos de reverberación de sala</string>
   <string name="pr_dialog_title">Ajustes predeterminados de reverberación</string>
   <string name="setup">Configuración</string>
@@ -62,5 +62,5 @@
   <string name="stereowide_moderate">Moderado</string>
   <string name="stereowide_high">Alto</string>
   <string name="stereowide_none">Ninguno</string>
-  <string name="sw_title">Potenciador de estéreo:</string>
+  <string name="sw_title">Potenciador</string>
 </resources>

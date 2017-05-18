@@ -23,7 +23,7 @@
   <string name="headset_plug">Connecta els auriculars per a aquests efectes.</string>
   <string name="bass_boost_strength">Accentuació de baixos</string>
   <string name="virtualizer_strength">So envoltant</string>
-  <string name="pr_title">Reverberació:</string>
+  <string name="pr_title">Reverberació</string>
   <string name="pr_summary">Efectes addicionals de reverberació ambiental</string>
   <string name="pr_dialog_title">Reverberació predefinida</string>
   <string name="setup">Configura</string>

@@ -23,7 +23,7 @@
   <string name="headset_plug">Συνδέστε τα ακουστικά για αυτά τα εφέ.</string>
   <string name="bass_boost_strength">Ενίσχυση μπάσων</string>
   <string name="virtualizer_strength">Περιφερειακός ήχος</string>
-  <string name="pr_title">Αντήχηση:</string>
+  <string name="pr_title">Αντήχηση</string>
   <string name="pr_summary">Πρόσθετα εφέ αντήχησης δωματίου</string>
   <string name="pr_dialog_title">Προεπιλογή αντήχησης</string>
   <string name="setup">Ρύθμιση</string>

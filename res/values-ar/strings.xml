@@ -23,7 +23,7 @@
   <string name="headset_plug">يمكنك توصيل سماعات الرأس للاستماع إلى هذه التأثيرات</string>
   <string name="bass_boost_strength">تحسين الجهير</string>
   <string name="virtualizer_strength">الصوت المحيطي</string>
-  <string name="pr_title">الصدى:</string>
+  <string name="pr_title">الصدى</string>
   <string name="pr_summary">التأثيرات الإضافية لصدى الغرفة</string>
   <string name="pr_dialog_title">الإعداد المسبق للصدى</string>
   <string name="setup">الإعداد</string>

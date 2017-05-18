@@ -24,7 +24,7 @@
   <string name="combo_device">Efekty jsou podporovány pouze pro přehrávání do sluchátek.</string>
   <string name="bass_boost_strength">Zvýraznění basů</string>
   <string name="virtualizer_strength">Prostorový zvuk</string>
-  <string name="pr_title">Dozvuk:</string>
+  <string name="pr_title">Dozvuk</string>
   <string name="pr_summary">Efekty dozvuku v místnosti</string>
   <string name="pr_dialog_title">Dozvuk (předvolba)</string>
   <string name="setup">Konfigurace</string>
@@ -62,5 +62,5 @@
   <string name="stereowide_moderate">Střední</string>
   <string name="stereowide_high">Vysoké</string>
   <string name="stereowide_none">Nic</string>
-  <string name="sw_title">Stereo rozšíření:</string>
+  <string name="sw_title">Rozšíření</string>
 </resources>
