@@ -218,7 +218,7 @@
                             android:layout_weight="1"
                             android:paddingStart="20dp"
                             android:text="@string/sw_title"
-                            android:textColor="@android:color/black" />
+                            android:textColor="@color/textColor" />
 
                         <Spinner
                             android:id="@+id/swSpinner"
