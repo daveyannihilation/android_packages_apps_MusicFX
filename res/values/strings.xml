@@ -64,6 +64,8 @@
     <string name="drawer_item_bluetooth">Bluetooth</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    
+    <string name="inuse_string">in-use</string>
 
     <string name="stereowide_light">Light</string>
     <string name="stereowide_moderate">Moderate</string>
