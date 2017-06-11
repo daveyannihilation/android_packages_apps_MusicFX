@@ -18,14 +18,15 @@
     package="com.android.musicfx" >
    <uses-sdk
         android:minSdkVersion="24"
-        android:targetSdkVersion="25" />
+        android:targetSdkVersion="26" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <application
-        android:icon="@drawable/icon"
         android:label="@string/eq_dialog_title"
+        android:icon="@drawable/ic_launcher_adapt"
+        android:roundIcon="@drawable/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
