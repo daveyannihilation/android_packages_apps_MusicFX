@@ -44,6 +44,7 @@
     <color name="visualizer_lowlight">@color/accentColor</color> <!-- equalizer active level bar elements -->
     <color name="visualizer_disabled">@color/disabled</color> <!-- equalizer level bar when musicfx is off -->
     <color name="spinner_disabled">#76777c</color> <!-- spinner color when set to none or musicfx is off -->
+	<color name="ic_launcher_background">#FF226D</color>
 
     <!--For more specific text colors like the reverb spinner text change android:textColor in layout/music_main.xml (by default they are linked to @color/textColor-->
 
