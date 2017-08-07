@@ -45,4 +45,6 @@
     <color name="visualizer_disabled">@color/disabled</color> <!-- equalizer level bar when musicfx is off -->
     <color name="spinner_disabled">#76777c</color> <!-- spinner color when set to none or musicfx is off -->
     <color name="ic_launcher_background">#FF226D</color>
+    <color name="spinner_reverb_list">@android:color/white</color>
+    <color name="toolbar_thumb_color">@color/accentColor</color>
 </resources>
