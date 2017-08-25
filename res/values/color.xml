@@ -12,12 +12,12 @@
 -->
 
 <resources>
-    <color name="primaryColor">@*android:color/primary_device_default_dark</color> <!--material_grey_900-->
-    <color name="primaryColorDark">@*android:color/primary_dark_device_default_dark</color> <!--dark grey-->
+    <color name="primaryColor">#F5F5F5</color> <!--material_grey_900-->
+    <color name="primaryColorDark">#ffeeeeee</color> <!--dark grey-->
     <color name="accentColor">@*android:color/accent_device_default_light</color> <!--pixel blue-->
     <color name="disabled">#ff616161</color> <!--boring grey-->
     <color name="textColor">@android:color/black</color> <!--black -->
-    <color name="drawer_header_text_color">@android:color/white</color> <!-- left drawer header txt color-->
+    <color name="drawer_header_text_color">@color/textColor</color> <!-- left drawer header txt color-->
     <color name="drawer_header_color">@color/primaryColor</color> <!-- left drawer header background color-->
     <color name="drawer_background_color">@android:color/white</color> <!-- left drawer menu background color-->
     <color name="drawer_text_color">@color/textColor</color> <!-- left drawer menu txt color-->
@@ -39,12 +39,13 @@
     <color name="eq_textColor">@color/textColor</color> <!--eq levels min-middle-max indicators txt -->
     <color name="mainBackgroundColor">@android:color/white</color> <!-- horizontal empty space between the bar showing the current active out source and the eq levels area -->
     <color name="current_out_source">@color/primaryColorDark</color> <!-- the bar with the current active out source icon and name -->
-    <color name="current_out_source_color">@android:color/white</color> <!-- icon and text showing the current active out source -->
+    <color name="current_out_source_color">#ff616161</color> <!-- icon and text showing the current active out source -->
     <color name="visualizer_highlight">@color/accentColor</color> <!-- equalizer active level bar top element  -->
     <color name="visualizer_lowlight">@color/accentColor</color> <!-- equalizer active level bar elements -->
     <color name="visualizer_disabled">@color/disabled</color> <!-- equalizer level bar when musicfx is off -->
     <color name="spinner_disabled">#76777c</color> <!-- spinner color when set to none or musicfx is off -->
     <color name="ic_launcher_background">#FF226D</color>
     <color name="spinner_reverb_list">@android:color/white</color>
-    <color name="toolbar_thumb_color">@color/accentColor</color>
+    <color name="switch_enabled">@color/accentColor</color>
+    <color name="switch_disabled">#e01a3f</color>
 </resources>

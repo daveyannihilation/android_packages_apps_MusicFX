@@ -39,13 +39,17 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowSharedElementsUseOverlay">false</item>
         <item name="android:textColorSecondary">@color/textColor</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/accentColor</item>   
+    </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="ToolbarSwitchTheme" >
-        <item name="android:colorControlActivated">@color/toolbar_thumb_color</item>
+        <item name="android:colorControlActivated">@color/switch_enabled</item>
+        <item name="android:colorControlNormal">@color/switch_disabled</item>
     </style>
 </resources>
