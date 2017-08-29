@@ -13,56 +13,56 @@
 
 <resources>
     <!-- Main Colors -->
-    <color name="primaryColor">#F5F5F5</color> <!--material_grey_900-->
-    <color name="primaryColorDark">#ffeeeeee</color> <!--dark grey-->
-    <color name="accentColor">@*android:color/accent_device_default_light</color> <!--pixel blue-->
-	<color name="accentColorDark">@*android:color/accent_device_default_dark</color>
-    <color name="ic_launcher_background">#FF226D</color>
+    <color name="primaryColor">#F5F5F5</color> <!-- Settings white -->
+    <color name="primaryColorDark">#ffeeeeee</color> <!-- Light grey -->
+    <color name="accentColor">@*android:color/accent_device_default_light</color> <!-- System accent -->
+    <color name="accentColorDark">@*android:color/accent_device_default_dark</color> <!-- System dark accent -->
+    <color name="ic_launcher_background">#FF226D</color> <!-- Launcher icon background -->
 
     <!-- Text Colors -->
-    <color name="textColor">@android:color/black</color> <!--black -->
-    <color name="drawer_header_text_color">@color/textColor</color> <!-- left drawer header txt color-->
-    <color name="drawer_menu_text_checked_color">@color/accentColor</color> <!-- left drawer menu checked entry txt color-->
-    <color name="drawer_menu_text_normal_color">@color/textColor</color> <!-- left drawer menu unchecked entries txt color-->
-    <color name="eq_textColor">@color/textColor</color> <!--eq levels min-middle-max indicators txt -->
-    <color name="highlight_gallery_text">@color/accentColor</color> <!-- eq presets text color when musicfx is on for the current selected preset -->
-    <color name="lowlight_gallery_text">@color/accentColorDark</color> <!-- eq presets text color when musicfx is on for other available presets -->
+    <color name="textColor">@android:color/black</color> <!-- Black text color -->
+    <color name="drawer_header_text_color">@color/textColor</color> <!-- Drawer header text color -->
+    <color name="drawer_menu_text_checked_color">@color/accentColor</color> <!-- Drawer menu active selection text color -->
+    <color name="drawer_menu_text_normal_color">@color/textColor</color> <!-- Drawer menu inactive selection text color -->
+    <color name="drawer_text_color">@color/textColor</color> <!-- Drawer menu options text color -->
+    <color name="eq_textColor">@color/textColor</color> <!-- Equalizer side text color  (-15 0 +15 color) -->
+    <color name="highlight_gallery_text">@color/accentColor</color> <!-- Active preset color -->
+    <color name="lowlight_gallery_text">@color/accentColorDark</color> <!-- Inactive preset color -->
 
     <!--Background Colors-->
-    <color name="drawer_background_color">@android:color/white</color> <!-- left drawer menu background color-->
-    <color name="eq_area_background">@android:color/white</color> <!-- eq levels area -->
-    <color name="gallery_bg_color">@android:color/white</color> <!-- horizontal bar where you can scroll the eq presets (after the eq and before the knobs -->
-    <color name="knobs_area_background">@android:color/white</color> <!-- area around knobs also at right of the eq area -->
-    <color name="mainBackgroundColor">@android:color/white</color> <!-- horizontal empty space between the bar showing the current active out source and the eq levels area -->
-    <color name="spinner_bg_color">@android:color/white</color> <!-- spinner box -->
+    <color name="drawer_background_color">@android:color/white</color> <!-- Drawer menu background color-->
+    <color name="eq_area_background">@android:color/white</color> <!-- Backround of the equalizer -->
+    <color name="gallery_bg_color">@android:color/white</color> <!-- Background of the bar under presets -->
+    <color name="knobs_area_background">@android:color/white</color> <!-- Background around knobs and background next to eq_background -->
+    <color name="mainBackgroundColor">@android:color/white</color> <!-- Background color for the rest of the background remaining -->
+    <color name="spinner_bg_color">@android:color/white</color> <!-- Background color of the spinner menu -->
 
     <!--Current Colors-->
-    <color name="current_out_source">@color/primaryColorDark</color> <!-- the bar with the current active out source icon and name -->
-    <color name="current_out_source_color">#ff616161</color> <!-- icon and text showing the current active out source -->
-    <color name="knob_current_level">@color/accentColor</color> <!-- knobs level and percentage level inside the knob - - - inner part of the knobs is drawable-hdpi/knob.png-->
+    <color name="current_out_source">@color/primaryColorDark</color> <!-- Current Out bar color -->
+    <color name="current_out_source_color">#ff616161</color> <!-- Text color on Current Out bar -->
+    <color name="knob_current_level">@color/accentColor</color> <!-- Knob current percentage and its enabled state -->
 
     <!-- Disabled Colors-->
-    <color name="disabled">#ff616161</color> <!--boring grey-->
-    <color name="disabled_gallery_text">@color/disabled</color> <!-- eq presets text color when musicfx is disabled -->
-    <color name="knob_disabled">@color/disabled</color> <!-- knobs level when musicfx is off -->
-    <color name="spinner_disabled">#76777c</color> <!-- spinner color when set to none or musicfx is off -->
-    <color name="visualizer_disabled">@color/disabled</color> <!-- equalizer level bar when musicfx is off -->
+    <color name="disabled">#ff616161</color> <!-- Gerneal disabled color -->
+    <color name="disabled_gallery_text">@color/disabled</color> <!-- Preset text color when disabled -->
+    <color name="knob_disabled">@color/disabled</color> <!-- Knobs level when musicfx is disabled -->
+    <color name="spinner_disabled">#76777c</color> <!-- Spinner color when set to none or musicfx is disabled -->
+    <color name="visualizer_disabled">@color/disabled</color> <!-- Equalizer level bar when musicfx is disable -->
 
     <!-- Drawer Colors -->
-    <color name="drawer_header_color">@color/primaryColor</color> <!-- left drawer header background color-->
-    <color name="drawer_menu_icon_checked_color">@color/accentColor</color> <!-- left drawer menu checked entry icon color-->
-    <color name="drawer_menu_icon_normal_color">@color/textColor</color> <!-- left drawer menu unchecked entries icon color-->
-    <color name="drawer_text_color">@color/textColor</color> <!-- left drawer menu txt color-->
+    <color name="drawer_header_color">@color/primaryColor</color> <!-- Drawer header background color -->
+    <color name="drawer_menu_icon_checked_color">@color/accentColor</color> <!-- Drawer menu active selection icon color -->
+    <color name="drawer_menu_icon_normal_color">@color/textColor</color> <!-- Drawer menu inactive selection icon color -->
 
     <!-- Spinner Colors-->
-    <color name="spinner_txt_area_color">@android:color/white</color> <!-- "Reverb" txt area plus a small part at right of the spinner box -->
+    <color name="spinner_txt_area_color">@android:color/white</color> <!-- "Reverb" text area plus a small part at right of the spinner box -->
     <color name="spinner_reverb_list">@android:color/white</color> <!-- Available "reverb" effects list background color-->
 
     <!-- Switch Colors-->
-    <color name="switch_enabled">@color/accentColor</color>
-    <color name="switch_disabled">#e01a3f</color>
+    <color name="switch_enabled">@color/accentColor</color> <!-- Switch color when musicfx is enabled -->
+    <color name="switch_disabled">#e01a3f</color> <!-- Switch color when musicfx is enabled -->
 
     <!-- Visualizer Colors-->
-    <color name="visualizer_highlight">@color/accentColor</color> <!-- equalizer active level bar top element  -->
-    <color name="visualizer_lowlight">@color/accentColorDark</color> <!-- equalizer active level bar elements -->
+    <color name="visualizer_highlight">@color/accentColor</color> <!-- Equalizer active level bar top element -->
+    <color name="visualizer_lowlight">@color/accentColorDark</color> <!-- Equalizer active level bar elements -->
 </resources>
