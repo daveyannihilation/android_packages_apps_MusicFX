@@ -16,6 +16,7 @@
     <color name="primaryColor">#F5F5F5</color> <!--material_grey_900-->
     <color name="primaryColorDark">#ffeeeeee</color> <!--dark grey-->
     <color name="accentColor">@*android:color/accent_device_default_light</color> <!--pixel blue-->
+	<color name="accentColorDark">@*android:color/accent_device_default_dark</color>
     <color name="ic_launcher_background">#FF226D</color>
 
     <!-- Text Colors -->
@@ -25,7 +26,7 @@
     <color name="drawer_menu_text_normal_color">@color/textColor</color> <!-- left drawer menu unchecked entries txt color-->
     <color name="eq_textColor">@color/textColor</color> <!--eq levels min-middle-max indicators txt -->
     <color name="highlight_gallery_text">@color/accentColor</color> <!-- eq presets text color when musicfx is on for the current selected preset -->
-    <color name="lowlight_gallery_text">@color/accentColor</color> <!-- eq presets text color when musicfx is on for other available presets -->
+    <color name="lowlight_gallery_text">@color/accentColorDark</color> <!-- eq presets text color when musicfx is on for other available presets -->
 
     <!--Background Colors-->
     <color name="drawer_background_color">@android:color/white</color> <!-- left drawer menu background color-->
@@ -63,5 +64,5 @@
 
     <!-- Visualizer Colors-->
     <color name="visualizer_highlight">@color/accentColor</color> <!-- equalizer active level bar top element  -->
-    <color name="visualizer_lowlight">@color/accentColor</color> <!-- equalizer active level bar elements -->
+    <color name="visualizer_lowlight">@color/accentColorDark</color> <!-- equalizer active level bar elements -->
 </resources>
